@@ -27,6 +27,7 @@
             <li><a href="Orcamentos.html">Orçamentos</a></li>
             <li><a href="Servicos.html">Serviços</a></li>
             <li><a class="quem-somos" href="Quem-Somos.html">Quem somos</a></li>
+            <li><a class="contate-nos" href="Contate.html">Contato</a></li>
           </ul>
         </nav>
       </section>
@@ -38,37 +39,59 @@
   </header>
 
   <main>
-    <section id="carousel-home">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+    <div class="conteudo_principal">
+      <section id="carousel-home">
+        <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Imagens/1-1.png" class="d-block w-100" alt="..." >
+            </div>
+            <div class="carousel-item">
+              <a href="Orcamentos.html"><img src="/Imagens/2-1.png" class="d-block w-100" alt="..." ></a>
+            </div>
+            <div class="carousel-item">
+              <img src="/Imagens/3.png" class="d-block w-100" alt="..." >
+            </div>
+            <div class="carousel-item">
+              <img src="/Imagens/4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/Imagens/5.png" class="d-block w-100" alt="...">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <section id="video-apresentacao">
-      <span class="apresentacao">Apresentacao</span>
-      <video id="video" src="https://www.surgicaltec.com.br/wp-content/uploads/2023/03/Video-Site-com-Corte.mp4"
-        controls></video>
-    </section>
-    <section class="servicos">
-
-    </section>
+      </section>
+      <section id="video-apresentacao">
+        <span class="apresentacao titulo">Apresentação</span>
+        <video id="video" src="https://www.surgicaltec.com.br/wp-content/uploads/2023/03/Video-Site-com-Corte.mp4" controls></video>
+      </section>
+      <section class="servicos">
+        <span class="servicos_texto titulo"> Serviços </span>
+        <div class="servicos_items">
+          <figure>
+            <img src="/Imagens/1.jpg" alt="Mountains">
+            <figcaption>Manutenção<br>Corretiva</figcaption>
+          </figure>
+          <figure>
+              <img src="/Imagens/2.jpg" alt="Mountains">
+              <figcaption>Manutenção<br>Preventiva</figcaption>
+          </figure>
+          <figure>
+              <img src="/Imagens/3.jpg" alt="Mountains">
+              <figcaption>Manutenção<br>Preventiva</figcaption>
+          </figure>
+        </div>
+        <a href="">Ver mais</a>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -80,14 +103,14 @@
       <div class="redes-sociais">
         <span class="redes subtitulo">Redes Sociais</span>
         <div id="footer-socialmedia">
-          <a href="#" class="footer-link" id="instagram">
+          <a href="https://www.instagram.com/surgicaltecnologia/" target="_blank" class="footer-link" id="instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="#" class="footer-link" id="facebook">
+          <a href="https://web.facebook.com/surgicaltecnologia" target="_blank" class="footer-link" id="facebook">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#" class="footer-link" id="whatsapp">
-            <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://www.linkedin.com/company/surgical-tecnologia/" target="_blank" class="footer-link" id="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
@@ -95,28 +118,21 @@
         <span class="fale subtitulo">Fale conosco</span>
         <button class="sac">Serviço de atendimento ao cliente - SAC</button>
         <button class="politica">Política de privacidade</button></a>
-      </div>
+      </div> 
       <div class="informacoes-de-contato">
-        <span class="contato subtitulo">Informações de contato</span>
-        <span class="telefones sub-subtitulo">Telefones:</span>
-        <button id="contate">Contate-nos</button>
-        <span class="visite sub-subtitulo">Visite-nos</span>
+        <span class="visite subtitulo">Visite-nos</span>
         <div class="visita">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2411743232938!2d-43.972053625432004!3d-19.914239237816666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6973b6b8bd3e3%3A0x1a07157d22ad60f!2sSurgical%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1689434596030!5m2!1spt-BR!2sbr"
-            width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="texto">
-            <span class="endereco">Endereço: Rua Manhumirim 447- Padre Eustáquio, Belo Horizonte - MG, 30720-070</span>
-          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2411743232938!2d-43.972053625432004!3d-19.914239237816666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6973b6b8bd3e3%3A0x1a07157d22ad60f!2sSurgical%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1689434596030!5m2!1spt-BR!2sbr" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="endereco">Endereço: Rua Manhumirim 447- Padre Eustáquio, Belo Horizonte - MG, 30720-070</span>
         </div>
       </div>
     </div>
+    <div class="copyright">
+      <span class="copyright_text">Copyright © 2023 Surgical Tecnologia </span>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>
