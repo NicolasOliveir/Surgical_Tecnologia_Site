@@ -1,0 +1,67 @@
+.campos{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-orcamento{
+    margin: 0 60vh;
+}
+
+.correcao{
+    font-size: 1rem;
+    color: rgb(216, 25, 25);
+}
+
+.form-orcamento-solicitar{
+    background-color: rgb(10, 204, 52);
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.2rem;
+}
+
+.botao_solicitacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9rem 0;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato .texto{
+    color: black;
+    font-family: 'Monteserrat' sans-serif;
+    font-weight: 500;
+    font-size: large;
+}
+
+.contato-whatsapps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+.contato-whatsapps button{
+    padding: 1.1rem 2rem;
+    background-color: #1BD741;
+    border-radius: 1.45rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.65rem;
+}
+
+.contato-whatsapps .fa-brands{
+    color: white;
+    font-size: 2.3rem;
+}
