@@ -41,6 +41,7 @@ main {
     text-align: center;
 }
 
+
 /* Header Inicio */
 
 .barra-de-navegacao {
@@ -50,26 +51,13 @@ main {
     padding: 0.8rem;
 }
 
-.logo-principal {
-    margin-left: 1.2rem;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-}
-
-.logo span {
-    font-size: medium;
-    font-weight: 500;
-    text-align: center;
+.logo-cabecalho{
+    display: grid;
+    place-items: center;
 }
 
 .nav-bar {
     display: grid;
-    grid-template-columns: 1fr;
     place-items: center;
 }
 
@@ -82,6 +70,7 @@ main {
     font-size: 1.25rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    margin: 0;
 }
 
 .menu-links li {
@@ -98,28 +87,22 @@ main {
     white-space: nowrap;
 }
 
-.links {
+.usuario {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: end;
     align-items: center;
 }
 
 .cliente {
-    color: coral;
+    color: whitesmoke;
+    font-size: medium;
+    
 }
-
 /* Fim Header */
 
-/* Inicio Main */
-#carousel-home{
-    margin-top:0.5rem;
-    width: 95%;
-}
 
-.carousel-inner{
-    border-radius: 1rem;
-}
+/* Inicio Main */
 
 .conteudo_principal{
     display: flex;
@@ -127,6 +110,15 @@ main {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+#carousel-home{
+    margin-top:0.5rem;
+    width: 95%;
+}
+
+.carousel-inner{
+    border-radius: 1rem;
 }
 
 #video {
@@ -194,14 +186,15 @@ figure img {
 
 /* Fim Config Cards */
 
+/* Footer Inicio */
 .conteudo {
     background: linear-gradient(#064561, #2b6883);
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 1.2rem;
     gap: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
 }
 
 .conteudo button {
@@ -218,50 +211,15 @@ figure img {
     align-items: center;
 }
 
-.conteudo span {
-    color: rgb(240, 240, 240);
-    margin: 0.5rem 0 0.5rem 0;
-}
-
-.fale-conosco {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-
-.informacoes-de-contato {
+.logo-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.visita {
-    display: flex;
-    width: 75%;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.copyright {
-    background-color: #000000;
-    color: whitesmoke;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.logo-footer a:hover{
+    scale: 1.2;
 }
 
 /* Redes Sociais */
@@ -291,19 +249,38 @@ figure img {
 #footer-socialmedia .footer-link :hover {
     opacity: 75%;
 }
-
-/* #instagram {
-    background: linear-gradient(#7f37e9, #ff2992, #ff9807);
-}
-
-#facebook {
-    background: linear-gradient(#3B91EA, #5777EB);
-}
-
-#linkedin {
-    background: #0f9dda;
-} */
-
 /* Fim Redes Sociais */
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.informacoes-de-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visita {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.copyright {
+    background-color: #000000;
+    color: whitesmoke;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Footer */

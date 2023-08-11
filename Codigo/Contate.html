@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="icon" href="https://www.surgicaltec.com.br/wp-content/uploads/2022/02/cropped-icone_surgical_tecnologia2-180x180.png">
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon"
+    href="https://www.surgicaltec.com.br/wp-content/uploads/2022/02/cropped-icone_surgical_tecnologia2-180x180.png">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/style_contato.css">
   <title>Surgical Tec – Calibração em equipamentos eletromédicos</title>
@@ -18,51 +19,56 @@
 <body>
   <header>
     <div class="barra-de-navegacao">
-      <section class="logo">
-        <img src="./assets/Logo-1-e1675283606825-300x112.png" style="height: 90px; width: 270px;" alt="" class="logo-principal">
+      <section class="logo-cabecalho">
+        <img src="./assets/Logo-1-e1675283606825-300x112.png" style="height: 90px; width: 270px;" alt=""
+          class="logo-principal">
       </section>
       <section class="nav-bar">
         <nav class="menu">
           <ul class="menu-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Orcamentos.html">Orçamentos</a></li>
             <li><a href="Servicos.html">Serviços</a></li>
-            <li><a class="quem-somos" href="Quem-Somos.html">Quem somos</a></li>
-            <li><a class="contate-nos" href="Contate.html">Contato</a></li>
+            <li><a href="Quem-Somos.html">Quem somos</a></li>
+            <li><a href="">Contatos</a></li>
           </ul>
         </nav>
       </section>
       <section class="links">
-        <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
-        <span class="cliente">Área do Cliente</span>
+        <a href="#" class="usuario">
+          <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
+          <span class="cliente">Área do Cliente</span>
+        </a>
+
       </section>
     </div>
   </header>
 
   <main>
     <div class="conteudo_contato">
-      <section class="links">
-        <span class="conteudo_contato_titulo1">Entre em contato conosco por Whatsapp</span>
-       <div class="whatsapps">
-         <a href=""><i class="fa-brands fa-whatsapp"></i>Comercial 1</a>
-         <a href=""><i class="fa-brands fa-whatsapp"></i>Comercial 2</a>
-         <a href=""><i class="fa-brands fa-whatsapp"></i>Expedição</a>
-         <a href=""><i class="fa-brands fa-whatsapp"></i>Planejamento</a>
-         <a href=""><i class="fa-brands fa-whatsapp"></i>Manutenção Corretiva</a>
-       </div>
-       <div class="telefone">
-         <a href=""><i class="fa-solid fa-phone"></i>(31)3141-7199</a>
-         <a href=""><i class="fa-solid fa-phone"></i>(31)3464-7199</a>
-       </div>
-      </section> 
-      <section class="envio">
-        <span class="mensagens">Envie sua mensagem</span>
-        <div class="envio_campos">
+      <section class="conteudo_contato_links">
+        <span class="conteudo_contato_titulo">Entre em contato conosco por Whatsapp</span>
+        <div class="whatsapps">
+          <a href=""><i class="fa-brands fa-whatsapp"></i><span>Comercial 1</span></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i>Comercial 2</a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i>Expedição</a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i>Planejamento</a>
+        </div>
+        <span class="conteudo_contato_titulo"> Caso Prefira, entre em contato por telefone </span>
+        <div class="telefones">
+          <a href=""><i class="fa-solid fa-phone"></i>(31)3141-7199</a>
+          <a href=""><i class="fa-solid fa-phone"></i>(31)3464-7199</a>
+        </div>
+      </section>
+      <section class="envio_mensagem">
+        <span class="conteudo_contato_titulo">Envie sua mensagem</span>
+        <div class="envio_mensagem_campos">
           <input type="text" name="nome" placeholder="Digite seu nome">
           <input type="text" name="email" placeholder="Digite seu email">
-          <textarea name="mensagem" class="envio_campos_mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+          <textarea name="mensagem" class="envio_campos_mensagem" cols="30" rows="10"
+            placeholder="Digite sua mensagem"></textarea>
           <div>
-            <a href="" class="botao_envio">Enviar Mensagem</a>
+            <a href="" class="botao_envio"><span>Enviar Mensagem</span></a>
           </div>
         </div>
       </section>
@@ -71,8 +77,8 @@
 
   <footer>
     <div class="conteudo">
-      <div class="logo">
-        <img src="./assets/Logo Colorida.png"  style="width: 321px;height: 140px;" id="logo">
+      <div class="logo-footer">
+        <img src="./assets/Logo Colorida.png" style="width: 321px;height: 140px;" id="logo">
         <div id="footer-socialmedia">
           <a href="https://www.instagram.com/surgicaltecnologia/" target="_blank" class="footer-link" id="instagram">
             <i class="fa-brands fa-instagram"></i>
@@ -80,7 +86,8 @@
           <a href="https://web.facebook.com/surgicaltecnologia" target="_blank" class="footer-link" id="facebook">
             <i class="fa-brands fa-square-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/company/surgical-tecnologia/" target="_blank" class="footer-link" id="linkedin">
+          <a href="https://www.linkedin.com/company/surgical-tecnologia/" target="_blank" class="footer-link"
+            id="linkedin">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
@@ -90,12 +97,16 @@
         <span class="fale subtitulo">Fale conosco</span>
         <button class="sac">Serviço de atendimento ao cliente - SAC</button>
         <button class="politica">Política de privacidade</button></a>
-      </div> 
+      </div>
       <div class="informacoes-de-contato">
         <span class="visite subtitulo">Visite-nos</span>
         <div class="visita">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2411743232938!2d-43.972053625432004!3d-19.914239237816666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6973b6b8bd3e3%3A0x1a07157d22ad60f!2sSurgical%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1689434596030!5m2!1spt-BR!2sbr" width="120" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <span class="endereco texto">Endereço: Rua Manhumirim 447- Padre Eustáquio, Belo Horizonte - MG, 30720-070</span>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2411743232938!2d-43.972053625432004!3d-19.914239237816666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6973b6b8bd3e3%3A0x1a07157d22ad60f!2sSurgical%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1689434596030!5m2!1spt-BR!2sbr"
+            width="120" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="endereco texto">Endereço: Rua Manhumirim 447- Padre Eustáquio, Belo Horizonte - MG,
+            30720-070</span>
         </div>
       </div>
     </div>
@@ -104,6 +115,9 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
