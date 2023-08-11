@@ -1,10 +1,35 @@
-.campos{
-    display: flex;
-    flex-direction: column;
+.form-orcamento{
+    padding: 0 60vh;
 }
 
-.form-orcamento{
-    margin: 0 60vh;
+.campos{
+    display: flex;
+    flex-direction: row;
+}
+
+.campos .labels,.inputs{
+ text-align: end;   
+ padding: 0.65rem;
+ display: flex;
+ flex-direction: column;
+ gap: 0.9rem;
+}
+
+.campos .inputs{
+    width: 80%;
+}
+
+.campos input,textarea{
+    border-radius: 0.6rem;
+    border-color: transparent;
+    padding: 5px;
+    width: 100%;
+}
+
+.campos label{
+    padding-left: 6px 0;
+    font-size: 18px;
+    font-weight: 450;
 }
 
 .correcao{
@@ -12,19 +37,36 @@
     color: rgb(216, 25, 25);
 }
 
-.form-orcamento-solicitar{
-    background-color: rgb(10, 204, 52);
-    color: white;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    border-radius: 1.2rem;
-}
-
 .botao_solicitacao{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0.9rem 0;
+}
+
+.form-orcamento-solicitar{
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    color: white;
+    border: none;
+    font-weight: 500;
+    padding: 3px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+}
+
+.form-orcamento-solicitar span{
+    text-align: center;
+    background-color: rgb(5, 6, 45);
+    padding: 1rem 1.4rem;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.form-orcamento-solicitar:hover span{
+    background: none;
 }
 
 .contato{
@@ -46,19 +88,30 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15vw;
+    margin: 10px 0;
+    gap: 10vw;
 }
 
 .contato-whatsapps button{
-    padding: 1.1rem 2rem;
-    background-color: #1BD741;
+    padding: 1.2rem 1.1rem;
+    background-color: #1f867e;
+    border: none;
     border-radius: 1.45rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
-    font-size: 1.65rem;
+    font-size: 1.4rem;
+    transition: all 0.4s;
+}
+
+.contato-whatsapps button span{
+    color: white;
+}
+
+.contato-whatsapps button:hover{
+    scale: 1.08;
 }
 
 .contato-whatsapps .fa-brands{

@@ -18,60 +18,67 @@
 <body>
   <header>
     <div class="barra-de-navegacao">
-      <section class="logo">
+      <section class="logo-cabecalho">
         <img src="./assets/Logo-1-e1675283606825-300x112.png" style="height: 90px; width: 270px;" alt="" class="logo-principal">
       </section>
       <section class="nav-bar">
         <nav class="menu">
           <ul class="menu-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Orçamentos</a></li>
+            <li><a href="">Orçamentos</a></li>
             <li><a href="Servicos.html">Serviços</a></li>
-            <li><a class="quem-somos" href="Quem-Somos.html">Quem somos</a></li>
-            <li><a class="contate-nos" href="Contate.html">Contato</a></li>
+            <li><a href="Quem-Somos.html">Quem somos</a></li>
+            <li><a href="Contate.html">Contatos</a></li>
           </ul>
         </nav>
       </section>
       <section class="links">
-        <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
-        <span class="cliente">Área do Cliente</span>
+        <a href="#" class="usuario">
+          <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
+          <span class="cliente">Área do Cliente</span>
+        </a>
+        
       </section>
     </div>
   </header>
 
   <main>
     <section class="form-orcamento">
-      <span class="titulo">Orçamento</span>
+      <span class="titulo">Faça aqui seu orçamento!!!</span>
       <div class="campos">
-        <label for="nome">Nome: <span class="correcao">*</span></label>
-        <input type="text" name="nome">
-        <label for="cnpj_cpf">CNPJ/CPF: <span class="correcao">*</span></label>
-        <input type="text" name="cnpj_cpf">
-        <label for="telefone">Telefone: <span class="correcao">*</span></label>
-        <input type="text" name="telefone">
-        <label for="email">Email: <span class="correcao">*</span></label>
-        <input type="text" name="email">
-        <label for="assunto">Assunto: <span class="correcao">*</span></label>
-        <input type="text" name="assunto">
-        <label for="descricao">Descrição: <span class="correcao">*</span></label>
-        <textarea name="descricao" cols="200" rows="8"></textarea>
+        <div class="labels">
+          <label for="nome">Nome: <span class="correcao">*</span></label>
+          <label for="cnpj_cpf">CNPJ/CPF: <span class="correcao">*</span></label>
+          <label for="telefone">Telefone: <span class="correcao">*</span></label>
+          <label for="email">Email: <span class="correcao">*</span></label>
+          <label for="assunto">Assunto: <span class="correcao">*</span></label>
+          <label for="descricao">Descrição: <span class="correcao">*</span></label>
+        </div>
+        <div class="inputs">
+          <input type="text" name="nome">
+          <input type="text" name="cnpj_cpf">
+          <input type="text" name="telefone">
+          <input type="text" name="email">
+          <input type="text" name="assunto">
+          <textarea name="descricao" cols="80" rows="8"></textarea>
+        </div>
       </div>
       <div class="botao_solicitacao">
-        <button class="form-orcamento-solicitar">Solicitar Orçamento</button>
+        <button class="form-orcamento-solicitar"><span>Solicitar Orçamento</span></button>
       </div>
     </section>
     <section class="contato">
       <span class="texto">Caso deseje entrar em contato direto com algum de nossos especialistas:</span>
       <div class="contato-whatsapps">
-        <button class="contato-whatsapp1"><i class="fa-brands fa-whatsapp"></i>Comercial 1</button>
-        <button class="contato-whatsapp2"><i class="fa-brands fa-whatsapp"></i>Comercial 2</button>
+        <button class="contato-whatsapp1"><i class="fa-brands fa-whatsapp"></i><span>Comercial 1</span></button>
+        <button class="contato-whatsapp2"><i class="fa-brands fa-whatsapp"></i><span>Comercial 2</span></button>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="conteudo">
-      <div class="logo">
+      <div class="logo-footer">
         <img src="./assets/Logo Colorida.png"  style="width: 321px;height: 140px;" id="logo">
         <div id="footer-socialmedia">
           <a href="https://www.instagram.com/surgicaltecnologia/" target="_blank" class="footer-link" id="instagram">

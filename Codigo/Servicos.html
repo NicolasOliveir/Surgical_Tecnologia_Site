@@ -19,9 +19,8 @@
 <body>
   <header>
     <div class="barra-de-navegacao">
-      <section class="logo">
-        <img src="./assets/Logo-1-e1675283606825-300x112.png" style="height: 90px; width: 270px;" alt=""
-          class="logo-principal">
+      <section class="logo-cabecalho">
+        <img src="./assets/Logo-1-e1675283606825-300x112.png" style="height: 90px; width: 270px;" alt="" class="logo-principal">
       </section>
       <section class="nav-bar">
         <nav class="menu">
@@ -29,14 +28,17 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="Orcamentos.html">Orçamentos</a></li>
             <li><a href="#">Serviços</a></li>
-            <li><a class="quem-somos" href="Quem-Somos.html">Quem somos</a></li>
-            <li><a class="contate-nos" href="Contate.html">Contato</a></li>
+            <li><a href="Quem-Somos.html">Quem somos</a></li>
+            <li><a href="Contate.html">Contatos</a></li>
           </ul>
         </nav>
       </section>
       <section class="links">
-        <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
-        <span class="cliente">Área do Cliente</span>
+        <a href="#" class="usuario">
+          <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
+          <span class="cliente">Área do Cliente</span>
+        </a>
+        
       </section>
     </div>
   </header>
@@ -44,41 +46,67 @@
   <main>
     <section class="servicos">
       <span class="servicos_titulo">Nossos Serviços</span>
-      <section class="servicos_corretiva">
-        <div class="imagem">
-          <img src="./assets/5-1-768x768.png" alt="" class="corretiva_img">
+      <section class="servicos_calibracao">
+        <img src="./assets/Calibracao.jpg" alt="" class="calibracao_img imagens_tipo">
+        <span class="calibracao titulo">Calibração</span>
+        <p class="calibracao-texto">
+          Há duas décadas, a Surgical Tecnologia se destaca no mercado, realizando a calibração de equipamentos médico-hospitalares. A nossa abordagem se pauta na confiabilidade e rastreabilidade da calibração, seguindo rigorosamente as normas de especificação, como a NBR ISO 9001 e seus requisitos metrológicos. Nossos serviços abrangem as renomadas instituições médicas de Belo Horizonte, assim como regiões interioranas de Minas Gerais, e se estendem por todo o território nacional. Consolidamo-nos como referência na calibração de analisadores em todo o estado de Minas Gerais.
+        </p>
+        <p class="calibracao-texto">
+          Confira abaixo alguns dos equipamentos que realizamos calibração:
+        </p>
+        <div class="calibracao_tipos">
+          <!-- <div class="card">
+            <img src="./assets/Equipamento/352193431_2124936457704815_2990026440123766643_n.jpg" alt="">
+          </div>
+          <div class="card">
+            <img src="./assets/Equipamento/352588840_253978083946016_4672451099422925413_n.jpg" alt="">
+          </div>
+          <div class="card">
+            <img src="./assets/Equipamento/355159850_1602726046883825_5761240590046204130_n.jpg" alt="">
+          </div>
+          <div class="card">
+            <img src="./assets/Equipamento/355271475_628114479250388_4399841028099783570_n.jpg" alt="">
+          </div>
+          <div class="card">
+            <img src="./assets/Equipamento/355431541_645085814158664_3035943876772179831_n.jpg" alt="">
+          </div> -->
         </div>
-        <span class="corretiva titulo">Manutenção Corretiva</span>
       </section>
       <section class="servicos_preventiva">
-        <img src="" alt="" class="preventiva_img">
-        <span class="preventiva titulo">Manutenção Preventiva</span>
-      </section>
-      <section class="servicos_calibracao">
-        <img src="" alt="" class="calibracao_img">
-        <span class="calibracao titulo">Calibração</span>
-        <div class="calibracao_tipos">
-
+        <img src="" alt="" class="preventiva_img imagens_tipo">
+        <div>
+          <span class="preventiva titulo">Manutenção Preventiva</span>
+          <p>A nossa abordagem de manutenção preventiva se fundamenta na investigação sistemática dos equipamentos médico-hospitalares, visando a minimização ou prevenção de possíveis falhas em seu desempenho. Essa avaliação é conduzida de maneira periódica, semestral ou anual, adaptando-se à complexidade de cada equipamento. Esse enfoque contribui significativamente para a redução das necessidades de intervenções corretivas, que não apenas acarretam despesas adicionais, mas também resultam em prejuízos operacionais.</p>
         </div>
       </section>
       <section class="servicos_teste">
-        <img src="" alt="" class="teste_img">
-        <span class="teste titulo">Teste de Seguranca Elétrica</span>
+        <img src="./assets/Teste de Seguranca_mod.jpg" alt="" class="teste_img imagens_tipo">
+        <div>
+          <span class="teste titulo">Teste de Seguranca Elétrica</span>
+          <p>Realizar testes de segurança elétrica em equipamentos médicos é essencial para garantir a integridade e a segurança dos pacientes, dos profissionais de saúde e do ambiente hospitalar como um todo. Esses testes asseguram que o equipamento esteja funcionando dentro dos parâmetros elétricos seguros, prevenindo riscos de choques elétricos, curtos-circuitos ou outros problemas que possam comprometer a operação adequada do equipamento e colocar em perigo a saúde e o bem-estar dos pacientes. Além disso, a realização regular desses testes contribui para cumprir regulamentações e normas de segurança estabelecidas pelas autoridades de saúde, garantindo a conformidade do equipamento com padrões de qualidade e segurança exigidos pela indústria médica.</p>
+        </div>
+      </section>
+      <section class="servicos_corretiva">
+        <img src="./assets/Corretiva.jpg" alt="" class="corretiva_img imagens_tipo">
+        <div>
+          <span class="corretiva titulo">Manutenção Corretiva</span>
+          <p>Com foco em corrigir eventuais problemas de falhas dos equipamentos em decorrência de acidentes, queda, quebras, erros de manuseio entre outros fatores que podem prejudicar o desempenho do equipamento.
+          </p>
+        </div>
       </section>
       <section class="servicos_locacao">
-        <img src="" alt="" class="locacao_img">
+        <img src="" alt="" class="locacao_img imagens_tipo">
         <span class="locacao titulo">Locação de Equipamentos</span>
-      </section>
-      <section class="servicos_treinamentos">
-        <img src="" alt="" class="treinamentos_img">
-        <span class="treinamentos titulo">Treinamentos</span>
+        <p>Locamos analisadores, simuladores, monitores etc. Consulte nossos equipamentos disponíveis para locação!
+        </p>
       </section>
     </section>
   </main>
 
   <footer>
     <div class="conteudo">
-      <div class="logo">
+      <div class="logo-footer">
         <img src="./assets/Logo Colorida.png"  style="width: 321px;height: 140px;" id="logo">
         <div id="footer-socialmedia">
           <a href="https://www.instagram.com/surgicaltecnologia/" target="_blank" class="footer-link" id="instagram">
@@ -111,8 +139,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
 </body>
 
