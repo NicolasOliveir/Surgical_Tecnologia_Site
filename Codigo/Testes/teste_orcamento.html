@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Orçamento</title>
+<link rel="stylesheet" href="teste.css">
+</head>
+<body>
+<div class="container">
+  <h1>Orçamento</h1>
+  <form>
+    <label for="item">Item:</label>
+    <input type="text" id="item" name="item" required>
+    
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" required>
+    
+    <label for="preco">Preço Unitário:</label>
+    <input type="number" id="preco" name="preco" step="0.01" required>
+    
+    <button type="submit">Adicionar Item</button>
+  </form>
+  
+  <h2>Itens do Orçamento</h2>
+  <ul id="item-list">
+    <!-- Itens adicionados aparecerão aqui -->
+  </ul>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

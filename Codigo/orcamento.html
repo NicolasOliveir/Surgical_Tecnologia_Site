@@ -12,6 +12,7 @@
   <link rel="icon" href="https://www.surgicaltec.com.br/wp-content/uploads/2022/02/cropped-icone_surgical_tecnologia2-180x180.png">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/style_orcamento.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <title>Surgical Tec – Calibração em equipamentos eletromédicos</title>
 </head>
 
@@ -25,55 +26,57 @@
         <nav class="menu">
           <ul class="menu-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Orçamentos</a></li>
-            <li><a href="Servicos.html">Serviços</a></li>
-            <li><a href="Quem-Somos.html">Quem somos</a></li>
-            <li><a href="Contate.html">Contatos</a></li>
+            <li><a href="orcamento.html">Orçamentos</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="about.html">Quem somos</a></li>
+            <li><a href="contate.html">Contatos</a></li>
           </ul>
         </nav>
       </section>
-      <section class="links">
+      <!-- <section class="links">
         <a href="#" class="usuario">
           <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
           <span class="cliente">Área do Cliente</span>
         </a>
         
-      </section>
+      </section> -->
     </div>
   </header>
 
   <main>
-    <section class="form-orcamento">
-      <span class="titulo">Faça aqui seu orçamento!!!</span>
-      <div class="campos">
-        <div class="labels">
+    <div class="orcamento">
+      <section class="form-orcamento">
+        <h1 class="orcamento-titulo">Solicitação de Orçamento</h1>
+        <form class="campos">
           <label for="nome">Nome: <span class="correcao">*</span></label>
-          <label for="cnpj_cpf">CNPJ/CPF: <span class="correcao">*</span></label>
-          <label for="telefone">Telefone: <span class="correcao">*</span></label>
-          <label for="email">Email: <span class="correcao">*</span></label>
-          <label for="assunto">Assunto: <span class="correcao">*</span></label>
-          <label for="descricao">Descrição: <span class="correcao">*</span></label>
-        </div>
-        <div class="inputs">
           <input type="text" name="nome">
-          <input type="text" name="cnpj_cpf">
-          <input type="text" name="telefone">
-          <input type="text" name="email">
+          <div class="campos_juncao">
+            <div>
+              <label for="telefone">Telefone: <span class="correcao">*</span></label>
+              <input type="text" name="telefone">
+            </div>
+            <div>
+              <label for="email">Email: <span class="correcao">*</span></label>
+              <input type="text" name="email">
+            </div>
+          </div>
+          <label for="assunto">Assunto: <span class="correcao">*</span></label>
           <input type="text" name="assunto">
-          <textarea name="descricao" cols="80" rows="8"></textarea>
+          <label for="descricao">Descrição: <span class="correcao">*</span></label>
+          <textarea name="descricao" rows="4" required></textarea>
+        </form>
+        <div class="botao_solicitacao">
+          <button class="form-orcamento-solicitar"><span>Solicitar Orçamento</span></button>
         </div>
-      </div>
-      <div class="botao_solicitacao">
-        <button class="form-orcamento-solicitar"><span>Solicitar Orçamento</span></button>
-      </div>
-    </section>
-    <section class="contato">
-      <span class="texto">Caso deseje entrar em contato direto com algum de nossos especialistas:</span>
-      <div class="contato-whatsapps">
-        <button class="contato-whatsapp1"><i class="fa-brands fa-whatsapp"></i><span>Comercial 1</span></button>
-        <button class="contato-whatsapp2"><i class="fa-brands fa-whatsapp"></i><span>Comercial 2</span></button>
-      </div>
-    </section>
+      </section>
+      <section class="contato">
+        <span class="texto">Caso deseje entrar em contato direto com algum de nossos especialistas:</span>
+        <div class="contato-whatsapps">
+          <button class="contato-whatsapp1"><i class="fa-brands fa-whatsapp"></i><span>Comercial 1</span></button>
+          <button class="contato-whatsapp2"><i class="fa-brands fa-whatsapp"></i><span>Comercial 2</span></button>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -112,5 +115,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+.about_sec{
+    width: 75vw;
+    margin: 0 auto;
+}
+
+
+.valores{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    
+}
+
+.certificacoes{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.certificacoes_img{
+    width: 100%;
+    height: 100%;
+}
+
+.certificacoes_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.trabalhe_conosco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabalhe_conosco_botao{
+    transform: skew(-21deg);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    background: #2b6883;
+    transition: all 0.4s;
+}
+
+.trabalhe_conosco_botao:hover{
+    scale: 1.08;
+}
+
+.trabalhe_conosco_botao span{
+    transform: skew(21deg);
+    
+}
+
+@media screen and (min-width: 450px) and (max-width:720px) {
+    .certificacoes{
+        display: flex;
+        flex-direction: column;
+    }
+}

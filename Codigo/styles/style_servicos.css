@@ -1,5 +1,6 @@
-.main{
-    width: 100%;
+.servicos_principal{
+    display: grid;
+    place-items: center;
 }
 
 .servicos{
@@ -7,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 85vw;
 }
 
 .imagens_tipo{
@@ -15,6 +17,18 @@
     background-color: #7d7d7d;
     width: 16rem;
     height: 16rem;
+}
+
+.servicos_corretiva{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.servicos_corretiva_texto{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .servicos_calibracao{
@@ -38,9 +52,11 @@
     height: 500px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    overflow-x: auto;
+    overflow: scroll;
+    gap: 2rem;
 }
 
 .calibracao-texto{
@@ -50,22 +66,26 @@
 
 .card{
     box-sizing: border-box;
-  width: 190px;
-  height: 254px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
+    width: 300px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.card img{
+    width: 190px;
 }
 
 .card:hover {
@@ -82,4 +102,8 @@
     flex-direction: row;
     justify-content: start;
     align-items: start;
+}
+
+@media screen and (min-width: 450px) and (max-width:720px) {
+
 }
