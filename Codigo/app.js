@@ -1,5 +1,5 @@
 var tela = window.location.pathname;
-if (tela == '/index.html') {
+if (tela == '/index.html'|| tela =='/') {
     $('.barra-de-navegacao').css("position", "absolute");
 }
 else {
