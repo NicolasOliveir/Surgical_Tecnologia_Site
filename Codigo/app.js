@@ -8,7 +8,7 @@ function RedirecionaPolitica(){
 
 function SelecionaBarra(){
     var tela = window.location.pathname;
-    if (tela == '/index.html') {
+    if (tela == '/index.html'|| tela =='/') {
         $('.barra-de-navegacao').css("position", "absolute");
     }
     else {
@@ -33,10 +33,7 @@ SelecionaBarra();
 $('.sac').on('click',RedirecionaSAC);
 $('.politica').on('click',RedirecionaPolitica);
 
-var tela = window.location.pathname;
-if (tela == '/index.html'|| tela =='/') {
-    $('.barra-de-navegacao').css("position", "absolute");
-}
+
 
 $('#estado').on('change',function(){
     var option = this.selectedOptions[0];
