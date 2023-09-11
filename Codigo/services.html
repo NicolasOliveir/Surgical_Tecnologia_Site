@@ -9,6 +9,7 @@
   crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c4f0f1685c.js" crossorigin="anonymous"></script>
   <link rel="icon"
   href="https://www.surgicaltec.com.br/wp-content/uploads/2022/02/cropped-icone_surgical_tecnologia2-180x180.png">
   <link rel="stylesheet" href="./styles/style.css">
@@ -47,23 +48,20 @@
   <main class="servicos_principal">
     <section class="servicos">
       <span class="servicos_titulo">Nossos Serviços</span>
-      <section class="servicos_corretiva">
-        <img src="./assets/Corretiva.jpg" alt="" class="corretiva_img imagens_tipo">
-        <div class="servicos_corretiva_texto">
-          <span class="corretiva titulo">Manutenção Corretiva</span>
-          <p>Com foco em corrigir eventuais problemas de falhas dos equipamentos em decorrência de acidentes, queda, quebras, erros de manuseio entre outros fatores que podem prejudicar o desempenho do equipamento.
+      <section class="servicos_calibracao">
+        <div id="imagem-servico">
+          <img src="./assets/Calibracao.jpg" alt="" class="calibracao_img imagens_tipo">
+          <span class="campos-laterais">Calibração</span>
+        </div>  
+        <div class="servicos_calibracao_texto">
+          <!-- <span class="calibracao titulo">Calibração</span> -->
+          <p class="calibracao-texto">
+            Há duas décadas, a Surgical Tecnologia se destaca no mercado, realizando a calibração de equipamentos médico-hospitalares. A nossa abordagem se pauta na confiabilidade e rastreabilidade da calibração, seguindo rigorosamente as normas de especificação, como a NBR ISO 9001 e seus requisitos metrológicos. Nossos serviços abrangem as renomadas instituições médicas de Belo Horizonte, assim como regiões interioranas de Minas Gerais, e se estendem por todo o território nacional. Consolidamo-nos como referência na calibração de analisadores em todo o estado de Minas Gerais.
+          </p>
+          <p class="calibracao-texto">
+            Confira abaixo alguns dos equipamentos que realizamos calibração:
           </p>
         </div>
-      </section>
-      <section class="servicos_calibracao">
-        <img src="./assets/Calibracao.jpg" alt="" class="calibracao_img imagens_tipo">
-        <span class="calibracao titulo">Calibração</span>
-        <p class="calibracao-texto">
-          Há duas décadas, a Surgical Tecnologia se destaca no mercado, realizando a calibração de equipamentos médico-hospitalares. A nossa abordagem se pauta na confiabilidade e rastreabilidade da calibração, seguindo rigorosamente as normas de especificação, como a NBR ISO 9001 e seus requisitos metrológicos. Nossos serviços abrangem as renomadas instituições médicas de Belo Horizonte, assim como regiões interioranas de Minas Gerais, e se estendem por todo o território nacional. Consolidamo-nos como referência na calibração de analisadores em todo o estado de Minas Gerais.
-        </p>
-        <p class="calibracao-texto">
-          Confira abaixo alguns dos equipamentos que realizamos calibração:
-        </p>
         <div class="calibracao_tipos">
           <div class="card">
             <img src="./assets/Equipamento/352193431_2124936457704815_2990026440123766643_n.jpg" alt="">
@@ -83,26 +81,48 @@
         </div>
       </section>
       <section class="servicos_preventiva">
-        <img src="" alt="" class="preventiva_img imagens_tipo">
-        <div>
-          <span class="preventiva titulo">Manutenção Preventiva</span>
+        <div class="servicos_preventiva_imagem">
+          <img src="" alt="" class="preventiva_img imagens_tipo">
+          <span class="campos-laterais">Manutenção Preventiva</span>
+        </div>
+        <div class="servicos_teste_texto">
+          <!-- <span class="preventiva titulo">Manutenção Preventiva</span> -->
           <p>A nossa abordagem de manutenção preventiva se fundamenta na investigação sistemática dos equipamentos médico-hospitalares, visando a minimização ou prevenção de possíveis falhas em seu desempenho. Essa avaliação é conduzida de maneira periódica, semestral ou anual, adaptando-se à complexidade de cada equipamento. Esse enfoque contribui significativamente para a redução das necessidades de intervenções corretivas, que não apenas acarretam despesas adicionais, mas também resultam em prejuízos operacionais.</p>
         </div>
       </section>
       <section class="servicos_teste">
-        <img src="./assets/Teste de Seguranca_mod.jpg" alt="" class="teste_img imagens_tipo">
-        <div>
-          <span class="teste titulo">Teste de Seguranca Elétrica</span>
+        <div class="servicos_teste_imagem">
+          <img src="./assets/Teste de Seguranca_mod.jpg" alt="" class="teste_img imagens_tipo">
+          <span class="campos-laterais">Teste de Segurança Elétrica</span>
+        </div>
+        <div class="servicos_teste_texto">
+          <!-- <span class="teste titulo">Teste de Seguranca Elétrica</span> -->
           <p>Realizar testes de segurança elétrica em equipamentos médicos é essencial para garantir a integridade e a segurança dos pacientes, dos profissionais de saúde e do ambiente hospitalar como um todo. Esses testes asseguram que o equipamento esteja funcionando dentro dos parâmetros elétricos seguros, prevenindo riscos de choques elétricos, curtos-circuitos ou outros problemas que possam comprometer a operação adequada do equipamento e colocar em perigo a saúde e o bem-estar dos pacientes. Além disso, a realização regular desses testes contribui para cumprir regulamentações e normas de segurança estabelecidas pelas autoridades de saúde, garantindo a conformidade do equipamento com padrões de qualidade e segurança exigidos pela indústria médica.</p>
         </div>
       </section>
-      
-      <section class="servicos_locacao">
-        <img src="" alt="" class="locacao_img imagens_tipo">
-        <span class="locacao titulo">Locação de Equipamentos</span>
-        <p>Locamos analisadores, simuladores, monitores etc. Consulte nossos equipamentos disponíveis para locação!
-        </p>
+      <section class="servicos_corretiva">
+        <div class="servicos_corretiva_imagem">
+          <img src="./assets/Corretiva.jpg" alt="" class="corretiva_img imagens_tipo">
+          <span class="campos-laterais">Manutenção Preventiva</span>
+        </div>
+        <div class="servicos_corretiva_texto">
+          <!-- <span class="corretiva titulo">Manutenção Corretiva</span> -->
+          <p>Com foco em corrigir eventuais problemas de falhas dos equipamentos em decorrência de acidentes, queda, quebras, erros de manuseio entre outros fatores que podem prejudicar o desempenho do equipamento.
+          </p>
+        </div>
       </section>
+      <section class="servicos_locacao">
+        <div class="servicos_locacao_imagem">
+          <img src="" alt="" class="locacao_img imagens_tipo">
+          <span class="campos-laterais">Locação</span>
+        </div>
+        <div class="servicos_locacao_texto">
+          <!-- <span class="locacao titulo">Locação de Equipamentos</span> -->
+          <p>Locamos analisadores, simuladores, monitores etc. Consulte nossos equipamentos disponíveis para locação!
+          </p>
+        </div>
+      </section>
+      <button onclick="RolaProTopo()" id="top"><i class="fa-solid fa-arrow-up"></i></button>
     </section>
   </main>
 
