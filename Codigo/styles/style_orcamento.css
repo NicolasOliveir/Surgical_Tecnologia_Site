@@ -58,7 +58,8 @@ h1{
 }
 
 .form-orcamento-solicitar{
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+    background: #2b6883;
     color: white;
     border: none;
     font-weight: 500;
