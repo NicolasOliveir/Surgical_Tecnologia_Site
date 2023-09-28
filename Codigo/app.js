@@ -4,6 +4,10 @@ function RedirecionaSAC(){
 
 function RedirecionaPolitica(){
     window.location.pathname = 'politices.html'
+
+var tela = window.location.pathname;
+if (tela == '/index.html'|| tela =='/') {
+    $('.barra-de-navegacao').css("position", "absolute");
 }
 
 function SelecionaBarra(){
