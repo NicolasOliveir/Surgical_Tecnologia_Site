@@ -34,6 +34,16 @@ p{
 
 .certificacoes{
     display: grid;
+    place-items: center;
+}
+
+.titulo_iso{
+    text-align: center;
+    text-decoration:underline;
+}
+
+.iso9001_conteudo{
+    display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;
 }

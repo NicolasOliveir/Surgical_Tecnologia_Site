@@ -74,10 +74,11 @@
 
 .calibracao_tipos {
     border-style: solid;
-    width: 75vw;
+    width: 800px;
     height: 500px;
     display: flex;
     flex-direction: row;
+    overflow-x: auto;
     justify-content: center;
     align-items: center;
     overflow-inline: auto;
