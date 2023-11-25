@@ -11,7 +11,6 @@
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" href="https://www.surgicaltec.com.br/wp-content/uploads/2022/02/cropped-icone_surgical_tecnologia2-180x180.png">
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/style_orcamento.css">
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <title>Surgical Tec – Calibração em equipamentos eletromédicos</title>
 </head>
@@ -22,6 +21,14 @@
       <section class="logo-cabecalho">
         <img src="./assets/Logo-1-e1675283606825-300x112.png" style="height: 90px; width: 270px;" alt="" class="logo-principal">
       </section>
+      <div class="mobile-menu">
+        <div class="botao-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <i class="fa-solid fa-x" id="close"></i>
+      </div>
       <section class="nav-bar">
         <nav class="menu">
           <ul class="menu-links">
@@ -29,17 +36,9 @@
             <li><a href="orcamento.html">Orçamentos</a></li>
             <li><a href="services.html">Serviços</a></li>
             <li><a href="about.html">Quem somos</a></li>
-            <!-- <li><a href="contate.html">Contatos</a></li> -->
           </ul>
         </nav>
       </section>
-      <!-- <section class="links">
-        <a href="#" class="usuario">
-          <img src="./assets/usuario-de-perfil.png" style="width: 50px;height: 50px;" alt="">
-          <span class="cliente">Área do Cliente</span>
-        </a>
-        
-      </section> -->
     </div>
   </header>
 
@@ -49,21 +48,21 @@
         <h1 class="orcamento-titulo">Solicitação de Orçamento</h1>
         <form class="campos">
           <label for="nome">Nome: <span class="correcao">*</span></label>
-          <input type="text" name="nome">
+          <input type="text" name="nome" id="name_campo">
           <div class="campos_juncao">
             <div>
               <label for="telefone">Telefone: <span class="correcao">*</span></label>
-              <input type="text" name="telefone">
+              <input type="text" name="telefone" id="telefone_campo">
             </div>
             <div>
               <label for="email">Email: <span class="correcao">*</span></label>
-              <input type="text" name="email">
+              <input type="text" name="email" id="email_campo">
             </div>
           </div>
           <label for="assunto">Assunto: <span class="correcao">*</span></label>
-          <input type="text" name="assunto">
+          <input type="text" name="assunto" id="assunto_campo">
           <label for="descricao">Descrição: <span class="correcao">*</span></label>
-          <textarea name="descricao" rows="4" required></textarea>
+          <textarea name="descricao" id="descricao_campo" rows="4" required></textarea>
         </form>
         <div class="botao_solicitacao">
           <button class="form-orcamento-solicitar"><span>Solicitar Orçamento</span></button>
