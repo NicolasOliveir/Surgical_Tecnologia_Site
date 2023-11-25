@@ -45,7 +45,7 @@ $('.sac').on('click', RedirecionaSAC);
 $('.politica').on('click', RedirecionaPolitica);
 
 //Função para puxar o endereço por cep
-$('#estado').on('change', function () {
+$('#estado').on('change',function(){
     var option = this.selectedOptions[0];
     var UF = option.value;
     $("#cidades").html(``)
@@ -75,3 +75,4 @@ $(".mobile-menu").click(function(){
 });
 
 alert(window.outerWidth);
+alert(window.outerHeight);
