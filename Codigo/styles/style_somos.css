@@ -1,58 +1,77 @@
-h3{
+h3 {
     text-align: center;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-.about_sec{
+.about_sec {
     width: 75vw;
     margin: 0 auto;
 }
 
+.valores_parte1,
+.valores_parte2,
+.valores_parte3 {
+    background: rgb(51, 238, 225);
+    border-radius: 3rem;
+    max-width: 17rem;
+    padding: 1.8rem;
+    margin-bottom: 0.5rem;
+}
 
-.valores{
+.alvo {
+    filter: drop-shadow(0 0 1rem rgb(197, 197, 197));
+}
+
+.valores {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     justify-items: center;
     align-items: start;
 }
 
-.valores div{
+.valores img {
+    width: 7rem;
+    margin: 0 auto 0 auto;
+    /* padding-bottom: 1.5rem; */
+}
+
+.valores div {
     display: flex;
     flex-direction: column;
 }
 
-.valores span{
+.valores span {
     text-align: center;
     font-weight: 550;
     font-size: 20px;
-    text-decoration:overline;
+    text-decoration: overline;
 }
 
-.certificacoes{
+.certificacoes {
     display: grid;
     place-items: center;
 }
 
-.titulo_iso{
+.titulo_iso {
     text-align: center;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-.iso9001_conteudo{
+.iso9001_conteudo {
     display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;
 }
 
-.certificacoes_img{
+.certificacoes_img {
     width: 16rem;
 }
 
-.certificacoes_texto{
+.certificacoes_texto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,13 +79,13 @@ p{
 }
 
 
-.trabalhe_conosco{
+.trabalhe_conosco {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.trabalhe_conosco_botao{
+.trabalhe_conosco_botao {
     transform: skew(-21deg);
     text-decoration: none;
     color: #fff;
@@ -76,18 +95,46 @@ p{
     transition: all 0.4s;
 }
 
-.trabalhe_conosco_botao:hover{
+.trabalhe_conosco_botao:hover {
     scale: 1.08;
 }
 
-.trabalhe_conosco_botao span{
+.trabalhe_conosco_botao span {
     transform: skew(21deg);
-    
+
 }
 
 @media screen and (min-width: 450px) and (max-width:720px) {
-    .certificacoes{
+    .certificacoes {
         display: flex;
         flex-direction: column;
+    }
+
+    .valores_parte1,
+    .valores_parte2,
+    .valores_parte3 {
+        border-radius: 3rem;
+        width: 17rem;
+        padding: 1.8rem;
+    }
+
+    .iso9001_conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .alvo {
+        filter: drop-shadow(0 0 0.75rem crimson);
+
+    }
+
+    .valores {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        justify-items: center;
+        align-items: start;
+        gap: 1.5rem;
     }
 }
