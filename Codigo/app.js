@@ -73,3 +73,5 @@ $(".mobile-menu").click(function(){
         $(".botao-menu").css("display","block");
     }
 });
+
+alert(window.outerWidth);
