@@ -16,6 +16,7 @@ function RedirecionaPolitica() {
 //Define qual o padrao de barra de navegação a ser utilizado
 function SelecionaBarra() {
     var tela = window.location.pathname;
+
     let largura = window.outerWidth;
     if (tela == '/index.html' && ( largura > 720)) {
         $('.barra-de-navegacao').css("position", "absolute");
@@ -76,3 +77,4 @@ $(".mobile-menu").click(function(){
 
 alert(window.outerWidth);
 alert(window.outerHeight);
+window.onscroll = function(){scrollFunction()};
