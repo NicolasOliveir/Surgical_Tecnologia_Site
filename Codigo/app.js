@@ -73,5 +73,3 @@ $(".mobile-menu").click(function(){
 
 var botao_topo = $("#top").html();
 window.onscroll = function () { scrollFunction() };
-
-// alert(window.outerWidth);
