@@ -16,9 +16,8 @@ function RedirecionaPolitica() {
 //Define qual o padrao de barra de navegação a ser utilizado
 function SelecionaBarra() {
     var tela = window.location.pathname;
-
     let largura = window.outerWidth;
-    if (tela == '/index.html' && ( largura > 720)) {
+    if ((tela == '/index.html' || tela == '/') && (largura > 720)) {
         $('.barra-de-navegacao').css("position", "absolute");
     }
     else{
@@ -60,9 +59,6 @@ $('#estado').on('change',function(){
         })
 })
 
-var botao_topo = $("#top").html();
-window.onscroll = function () { scrollFunction() };
-
 //Controle do botão do menu
 $(".mobile-menu").click(function(){
     $(".menu-links").toggleClass("is-open");
@@ -75,6 +71,7 @@ $(".mobile-menu").click(function(){
     }
 });
 
-alert(window.outerWidth);
-alert(window.outerHeight);
-window.onscroll = function(){scrollFunction()};
+var botao_topo = $("#top").html();
+window.onscroll = function () { scrollFunction() };
+
+// alert(window.outerWidth);
