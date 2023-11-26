@@ -825,7 +825,7 @@ h1{
 
 /* FIM PAGINA SERVIÇOS */
 
-@media screen and (min-width: 456px) and (max-width:720px) {
+@media screen and (min-width: 320px) and (max-width:720px) {
     #video {
         flex-direction: column;
     }
