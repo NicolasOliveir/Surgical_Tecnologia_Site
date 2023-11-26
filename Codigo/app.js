@@ -16,7 +16,6 @@ function RedirecionaPolitica() {
 //Define qual o padrao de barra de navegação a ser utilizado
 function SelecionaBarra() {
     var tela = window.location.pathname;
-    let largura = window.outerWidth;
     if ((tela == '/index.html' || tela == '/') && (largura > 720)) {
         $('.barra-de-navegacao').css("position", "absolute");
     }
@@ -39,10 +38,6 @@ function RolaProTopo() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-SelecionaBarra();
-$('.sac').on('click', RedirecionaSAC);
-$('.politica').on('click', RedirecionaPolitica);
 
 //Função para puxar o endereço por cep
 $('#estado').on('change',function(){
@@ -71,5 +66,21 @@ $(".mobile-menu").click(function(){
     }
 });
 
+var largura = window.outerWidth;
+
 var botao_topo = $("#top").html();
 window.onscroll = function () { scrollFunction() };
+
+SelecionaBarra();
+$('.sac').on('click', RedirecionaSAC);
+$('.politica').on('click', RedirecionaPolitica);
+
+if (largura < 720){
+    var video = `<iframe id="player" width="${largura}" height="315" src="https://www.youtube.com/embed/Hz8Ql8cMj4U?si=Ws1M84cAOQehcg8o&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="video__texto"> Conheça um pouco sobre nós!!!</p>`
+}else{
+    var video = `<iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/Hz8Ql8cMj4U?si=Ws1M84cAOQehcg8o&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="video__texto"> Conheça um pouco sobre nós!!!</p>`
+}
+$("#video").html(video);
+$("#video").css("padding","0.2rem");
