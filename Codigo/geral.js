@@ -42,11 +42,11 @@ function RolaProTopo() {
 function AdicionaVideo() {
     if (largura > 720) {
         var video = `
-        <video autoplay id="video-apresentacao" controlslist ="nodownload" mute controls><source src="./assets/apresentacao.mov" type="video/mp4"></video>
+        <video autoplay id="video-apresentacao" class="scrollreveal" controlslist ="nodownload" mute controls><source src="./assets/apresentacao.mov" type="video/mp4"></video>
         <p class="video__texto"> Venha nos conhecer!!!</p>`
     } else {
         var video = `<p class="video__texto"> Venha nos conhecer!!!</p>
-        <video autoplay id="video-apresentacao" controlslist ="nodownload" mute controls><source src="./assets/apresentacao.mov" type="video/mp4"></video>`
+        <video autoplay id="video-apresentacao" class="scrollreveal" controlslist ="nodownload" mute controls><source src="./assets/apresentacao.mov" type="video/mp4"></video>`
     }
 
     document.querySelector("#video").innerHTML = video;
@@ -145,3 +145,63 @@ if (pagina == "/sac.html" || pagina == "/orcamento.html") {
         pesquisaUF(UF);
     });
 }
+
+
+
+//Reveal
+
+window.revelar= ScrollReveal()
+
+revelar.reveal('.video__texto',{
+    distance: '90px',
+    duration: 1500,
+    delay:250
+})
+
+revelar.reveal('.card1',{
+    distance: '50px',
+    duration: 1500,
+    delay:500,
+    origin: 'left',
+})
+
+revelar.reveal('.card2',{
+    distance: '50px',
+    duration: 1500,
+    delay: 1000,
+    origin: 'bottom'
+})
+
+revelar.reveal('.card3',{
+    distance: '50px',
+    duration: 1500,
+    delay: 1500,
+    origin: 'right'
+})
+
+revelar.reveal('#botao_servicos',{
+    distance: '50px',
+    duration: 1500,
+    delay:250
+})
+
+revelar.reveal('.whatsapps-contato1',{
+    distance: '50px',
+    duration: 1500,
+    delay: 750
+})
+revelar.reveal('.whatsapps-contato2',{
+    distance: '50px',
+    duration: 1500,
+    delay: 1000
+})
+revelar.reveal('.whatsapps-expedicao',{
+    distance: '50px',
+    duration: 1500,
+    delay: 1250
+})
+revelar.reveal('.whatsapps-planejamento',{
+    distance: '50px',
+    duration: 1500,
+    delay: 1500
+})

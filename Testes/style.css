@@ -1,0 +1,28 @@
+.container {
+    position: relative; /* Criar um contexto de posição relativa */
+    width: 35rem; /* Largura do container */
+    height: 20rem; /* Altura do container */
+  }
+  
+  .background-image {
+    position: absolute; /* Posicionar a imagem de fundo absolutamente */
+    top: 0; /* Topo da imagem de fundo */
+    left: 0; /* Lado esquerdo da imagem de fundo */
+    width: 100%; /* Largura da imagem de fundo */
+    height: 100%; /* Altura da imagem de fundo */
+    object-fit: cover; /* Fazer com que a imagem de fundo cubra todo o container */
+  }
+  
+  .overlay {
+    position: absolute; /* Posicionar o overlay absolutamente */
+    top: 0; /* Topo do overlay */
+    right: 0; /* Lado esquerdo do overlay */
+    width: 9rem; /* Largura do overlay */
+    height: 100%; /* Altura do overlay */
+    display: flex; /* Fazer com que o overlay seja um container flexível */
+    justify-content: center; /* Centralizar o texto horizontalmente */
+    align-items: center; /* Centralizar o texto verticalmente */
+    color: #ffffff; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    background-color: rgba(10, 118, 128, 0.5); /* Cor de fundo do overlay com opacidade */
+  }
