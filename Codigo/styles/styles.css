@@ -676,6 +676,53 @@ label{
 /*FIM ORÇAMENTOS*/
 
 /* PAGINA SERVIÇOS */
+
+.container {
+    position: relative; /* Criar um contexto de posição relativa */
+    width: 45rem; /* Largura do container */
+    height: 25rem; /* Altura do container */
+}
+
+.imagens_tipo {
+    position: absolute; /* Posicionar a imagem de fundo absolutamente */
+    top: 0; /* Topo da imagem de fundo */
+    left: 0; /* Lado esquerdo da imagem de fundo */ 
+    border-radius: 3rem;
+    object-fit: cover;
+    background-color: #7d7d7d;
+    width: 45rem;
+    height: 25rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.overlay {
+    position: absolute; /* Posicionar o overlay absolutamente */
+    top: 0; /* Topo do overlay */
+    right: 0; /* Lado esquerdo do overlay */
+    width: 14rem; /* Largura do overlay */
+    height: 100%; /* Altura do overlay */
+    display: flex; /* Fazer com que o overlay seja um container flexível */
+    justify-content: center; /* Centralizar o texto horizontalmente */
+    align-items: center; /* Centralizar o texto verticalmente */
+    color: #ffffff; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    background-color: rgba(10, 118, 128, 0.5); /* Cor de fundo do overlay com opacidade */
+}
+
+.texto_container{
+    justify-items: center;
+    align-items: center;
+    font-size: var(--tamanho-texto);
+    margin: 5rem;
+    text-wrap-mode:wrap;
+}
+
+.servicos p{
+    text-align: justify;
+}
+
 .servicos_principal {
     display: grid;
     place-items: center;
@@ -688,24 +735,6 @@ label{
     align-items: center;
     gap: 2rem;
     width: 85vw;
-}
-
-.servicos p {
-    width: 75vw;
-    padding: 0.75rem 0;
-    text-align: justify;
-    font-weight: 400;
-}
-
-.imagens_tipo {
-    border-radius: 3rem;
-    object-fit: cover;
-    background-color: #7d7d7d;
-    width: 65rem;
-    height: 30rem;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
 }
 
 .servicos_corretiva_texto {
